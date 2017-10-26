@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://galadirith.github.io/stfc-cdt-national-event-git/#/5 -->
+<html class="js no-mobile desktop no-ie chrome chrome61 stfc-cdt-national-event-git-section w-1422 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface domloaded no-controls" id="index-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- # Metadata -->
+
+<title>VCS, Git and GitHub</title>
+<link rel="icon" href="https://gravity.astro.cf.ac.uk/~c1548640/sin_t_iacute_tulo_2__2__by_betatus-d6th2k0.ico">
+
+<!-- # Styles -->
+<link rel="stylesheet" href="./VCS, Git and GitHub_files/reveal.css">
+<link rel="stylesheet" href="./VCS, Git and GitHub_files/default.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.min.css"> -->
+<script type="text/javascript" src="./VCS, Git and GitHub_files/marked.js"></script><script type="text/javascript" src="./VCS, Git and GitHub_files/markdown.js"></script><link href="./VCS, Git and GitHub_files/index-f20e34391f876037aa8d6be7a2267299.css" rel="stylesheet"></head>
+<body>
+
+<!-- # Slides -->
+<div class="reveal slide ready" role="application" data-transition-speed="default" data-background-transition="fade">
+  <div class="slides" style="width: 1422px; height: 699px;">
+
+    <!-- # Heading slide -->
+    <section class="heading past" data-state="no-controls" style="display: none;" hidden="" aria-hidden="true">
+      <div data-markdown="" data-markdown-parsed="true"><h1 id="vcs-git-and-github">VCS, Git and GitHub</h1>
+<p class="quote"><em>Any tool should be useful in the expected way, but a truly great tool
+lends itself to uses you never expected.</em>
+<em><a href="http://www.catb.org/~esr/writings/cathedral-bazaar/">Eric S. Raymond, The Cathedral and the Bazaar</a></em></p>
+<!-- -->
+<p><a href="https://goo.gl/7aGpDQ">goo.gl/7aGpDQ</a></p>
+</div>
+    </section>
+
+    <!-- # Profile -->
+    <section class="heading past" data-state="no-controls" style="display: none;" hidden="" aria-hidden="true">
+      <div class="profile">
+        <div>
+          <div class="edward"></div>
+          <div data-markdown="" data-markdown-parsed="true"><p><strong>Edward Fauchon-Jones</strong>
+<br>
+<a href="https://github.com/Galadirith"><i class="fa fa-github" aria-hidden="true"></i> Galadirith</a></p>
+</div>
+        </div>
+        <div>
+          <div data-markdown="" data-markdown-parsed="true"><p>I've jsut started the third year of my PhD at Cardiff University
+with the Gravitational Physics Group. I'm currently on an
+industrial placement with Cray through the Data Intensive Research
+Institute at Cardiff Univeristy, and if you have any questions
+about this part of your PhD's please ask :D</p>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- # References -->
+    <section class="heading past" data-state="no-controls" style="display: none;" hidden="" aria-hidden="true">
+      <div class="references">
+        <div>
+          <div class="jessica"></div>
+          <div data-markdown="" data-markdown-parsed="true"><p><strong>Jessica Lord</strong>
+<br>
+<a href="https://github.com/jlord"><i class="fa fa-github" aria-hidden="true"></i> jlord</a>
+<br>
+<a href="https://jlord.github.io/">jlord.github.io</a></p>
+</div>
+        </div>
+        <div>
+          <div class="duncan"></div>
+          <div data-markdown="" data-markdown-parsed="true"><p><strong>Duncan Macleod</strong>
+<br>
+<a href="https://github.com/duncanmmacleod"><i class="fa fa-github" aria-hidden="true"></i> duncanmmacleod</a>
+<br>
+<a href="https://gwpy.github.io/">gwpy.github.io</a></p>
+</div>
+        </div>
+        <div>
+          <div class="adam"></div>
+          <div data-markdown="" data-markdown-parsed="true"><p><strong>Adam Mercer</strong>
+<br>
+<a href="https://github.com/skymoo"><i class="fa fa-github" aria-hidden="true"></i> skymoo</a>
+<br>
+<br></p>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack past" style="display: block;" data-previous-indexv="0" hidden="" aria-hidden="true">
+
+      <!-- # Introduction : Version Control Systems (VCS) -->
+      <section class="heading" data-state="no-controls" style="display: block;" aria-hidden="true">
+        <div data-markdown="" data-markdown-parsed="true"><h1 id="introduction">Introduction</h1>
+<h3 id="version-control-systems-vcs-">Version Control Systems (VCS)</h3>
+</div>
+      </section>
+
+      <!-- # What is a Version Control System (VCS)? -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+          <div data-markdown="" data-markdown-parsed="true"><h5 id="what-is-a-version-control-system-vcs-">What is a Version Control System (VCS)?</h5>
+<p class="quote fragment visible" data-fragment-index="0"><em>Version control is a system that records changes to a file or set of
+files over time so that you can recall specific versions later</em>
+<em><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">About Version Control, Pro Git book</a></em></p>
+<!-- -->
+<h5 id="examples-of-simple-vcs">Examples of simple VCS</h5>
+<ul class="fragment visible" data-fragment-index="1">
+<li>Google Docs</li>
+<li>Apple Time Machine</li>
+<li><code>Ctrl+Z</code></li>
+<li>Manually copy (i.e. You)</li>
+<li>...</li>
+</ul>
+<!-- -->
+</div>
+      </div></section>
+
+      <!-- # Why use a VCS? -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="why-use-a-vcs-">Why use a VCS?</h4>
+<ul class="fragment visible" data-fragment-index="0">
+<li><p><strong>Record history</strong><br>
+Track the development of a project</p>
+</li>
+<li><p><strong>Describe changes</strong><br>
+Find out why a specific change was made</p>
+</li>
+<li><p><strong>Fix mistakes</strong><br>
+Retrieve code that was previously deleted or changed</p>
+</li>
+<li><p><strong>Share updates</strong><br>
+Collaborate with other developers remoteley</p>
+</li>
+<li><p><strong>Project managment</strong><br>
+Control project development and divide tasks</p>
+</li>
+</ul>
+<!-- -->
+</div>
+      </div></section>
+
+      <!-- # History of VCS -->
+      <section class="three-column-2-3-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><p><strong>VCS generations</strong></p>
+<h4 id="features">Features</h4>
+<h4 id="examples">Examples</h4>
+<h4 id="first-generation">First generation</h4>
+<ul class="fragment visible" data-fragment-index="0">
+<li>Centralized on a single machine</li>
+<li>No concurrent editing</li>
+<li>File scope history</li>
+</ul>
+<!-- -->
+<ul class="fragment visible" data-fragment-index="0">
+<li>Source Code Control System (SCCS)</li>
+<li>Revision Control System (RCS)</li>
+</ul>
+<!-- -->
+<h4 id="second-generation">Second generation</h4>
+<ul class="fragment visible" data-fragment-index="1">
+<li>Centralized on multiple machines</li>
+<li>Merge before recording changes</li>
+<li>File/set scope history</li>
+<li>Changeset based</li>
+</ul>
+<!-- -->
+<ul class="fragment visible" data-fragment-index="1">
+<li>Concurrent Versions System (CVS)</li>
+<li>Subversion (SVN)</li>
+<li>Team Foundation Server</li>
+</ul>
+<!-- -->
+<h4 id="third-generation">Third generation</h4>
+<ul class="fragment visible" data-fragment-index="2">
+<li>Decentralized</li>
+<li>Merge after recording changes</li>
+<li>Fileset scope history</li>
+<li>Changeset/Snapshot based</li>
+</ul>
+<!-- -->
+<ul class="fragment visible" data-fragment-index="2">
+<li>Bazaar</li>
+<li>Git</li>
+<li>Mercurial</li>
+</ul>
+<!-- -->
+</div>
+      </div></section>
+
+      <!-- # Why use Git? -->
+      <section class="three-column-2-3-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="why-use-git-">Why use Git?</h4>
+<p><a href="https://github.com/tensorflow/tensorflow"><img src="./VCS, Git and GitHub_files/tensorflow.png" alt=""></a></p>
+<p><a href="https://github.com/python/cpython"><img src="./VCS, Git and GitHub_files/python.png" alt=""></a></p>
+<h6 id="-a-better-question-is-who-isn-t-using-git-" class="fragment visible" data-fragment-index="0"><em>(A better question is who isn't using Git?)</em></h6>
+<!-- -->
+<p><a href="https://github.com/ligo-cbc/pycbc"><img src="./VCS, Git and GitHub_files/pycbc.png" alt=""></a></p>
+<p><a href="https://github.com/nodejs/node"><img src="./VCS, Git and GitHub_files/node.png" alt=""></a></p>
+</div>
+      </div></section>
+
+    </section>
+
+
+    <!-- # Pattern I : Manage projects with Git -->
+    <section class="stack past" style="display: block;" data-previous-indexv="0" hidden="" aria-hidden="true">
+
+      <section class="heading" data-state="no-controls" style="display: block;" aria-hidden="true">
+        <div data-markdown="" data-markdown-parsed="true"><h1 id="pattern-i">Pattern I</h1>
+<h3 id="manage-projects-with-git">Manage projects with Git</h3>
+</div>
+      </section>
+
+      <!-- # Goals -->
+      <section class="prose future" data-state="no-controls" aria-hidden="true" style="display: block;" hidden="">
+        <div data-markdown="" data-markdown-parsed="true"><h1 id="goals">Goals</h1>
+<ol>
+<li><p><strong>Setup <code>git</code></strong><br>
+Install <code>git</code> and configure <code>git</code> in a recommend initial state</p>
+</li>
+<li><p><strong>Create a repository</strong><br>
+Create a folder and convert it to a <code>git</code> repository to start
+tracking snapshots</p>
+</li>
+<li><p><strong>Create a commit</strong><br>
+Create our first project file and store a snapshot</p>
+</li>
+<li><p><strong>Browse your repository</strong><br>
+View current changes and past commits</p>
+</li>
+<li><p><strong>Push to GitHub</strong><br>
+Create a copy of our respository on GitHub</p>
+</li>
+</ol>
+</div>
+      </section>
+
+      <!-- # Global definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="terminal">Terminal</h4>
+<p>A <strong>terminal</strong> or <strong>text terminal</strong> is a program that allows us to
+interact with a computer with text rather than graphic user
+interfaces and with applications that have <strong>command line
+interfaces.</strong></p>
+<h4 id="commands">Commands</h4>
+<p>To run a <strong>command</strong> in a terminal just type it out and press
+enter. You might often see commands preceeded with <code>$</code> or <code>&gt;</code>. This
+are to indicate that the terminal is ready for a command but are not
+part of the command that you should type out and run.</p>
+</div>
+        <div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="git-commands">Git commands</h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><p>All <code>git</code> commands have the same format</p>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git &lt;git-command&gt; [&lt;value-1&gt; &lt;value-2&gt; ...]</span>
+</code></pre>
+<p>When you see an expression like <code>&lt;value&gt;</code> you should replace it and
+the brackets <code>&lt;</code> and <code>&gt;</code> with an appropriate value which will depend
+on the situation. An expression like <code>[optional]</code> is optional. If you
+use it when running a command you should replace it with <code>optional</code>.</p>
+</div>
+        </div>
+      </div></section>
+
+      <!-- # Setup Git definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-config-https-git-scm-com-docs-git-config-"><a href="https://git-scm.com/docs/git-config">git-config</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git config [--global] &lt;name&gt; &lt;value&gt;</span>
+</code></pre>
+<p>Configure options that determine how Git runs.</p>
+<p class="parameter"><code>--global</code> <em>Set options that affect all Git repositories on your computer</em></p>
+<!-- -->
+<p class="parameter"><code>name</code> <em>Name of the option that you want to change</em></p>
+<!-- -->
+<p class="parameter"><code>value</code> <em>Value that you want <code>name</code> to be changed to</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Setup git -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="1">1</h4>
+<h5 id="setup-git">Setup Git</h5>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="install-git">Install Git</h4>
+<p>If you don't have Git already installed (run <code>git --version</code> to
+find out) the simplest way to do this on Mac and Windows is to head
+over to <a href="https://git-scm.com/">git-scm.com</a> and download and install
+the program. If you are on a debian based operating system run
+<code>apt-get install git</code>.</p>
+</div>
+        <div>
+          <div data-markdown="" data-markdown-parsed="true"><h4 id="configure-git">Configure Git</h4>
+</div>
+          <div data-markdown="" data-markdown-parsed="true"><p>We will tell Git your name and email address so that commits you
+make are attributed to you</p>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git config --global user.name &lt;your-name&gt;</span>
+<span class="hljs-meta">$</span><span class="bash"> git config --global user.email &lt;your-email&gt;</span>
+</code></pre>
+</div>
+        </div>
+      </div></section>
+
+      <!-- # Create repository definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-init-https-git-scm-com-docs-git-init-"><a href="https://git-scm.com/docs/git-init">git-init</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git init &lt;directory&gt;</span>
+</code></pre>
+<p>Create an empty Git repository or reinitialize an existing one</p>
+<p class="parameter"><code>Directory</code> <em>Directory in which to create an empty Git repository</em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-status-https-git-scm-com-docs-git-status-"><a href="https://git-scm.com/docs/git-status">git-status</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status [&lt;path&gt;]</span>
+</code></pre>
+<p>Show the working tree status</p>
+<p class="parameter"><code>Path</code> <em>Path to file or directory to check the status of. If you omit
+<code>Path</code> then the status of your entire repository will be checked</em>.</p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Create repository -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="2">2</h4>
+<h5 id="create-a-repository">Create a repository</h5>
+<h4 id="make-a-folder">Make a folder</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> mkdir dragonite</span>
+<span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> dragonite</span>
+</code></pre>
+<h4 id="initialize-it">Initialize it</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git init .</span>
+Initialized empty Git repository in .../dragonite/.git/
+</code></pre>
+<h4 id="inspect-it">Inspect it</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status</span>
+On branch master
+Initial commit
+nothing to commit (create/copy files and use "git add" to track)
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Create a commit definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="repository">Repository</h4>
+<p>A <strong>repository</strong> is your projects folder plus a special folder <code>.git</code>
+that is created during initialization inside your projects folder.
+This special folder stores all Git information including previous
+versions.</p>
+<h4 id="commit">Commit</h4>
+<p>A <strong>commit</strong> is a snapshot of the files in your projects folder
+that is recorded by Git along with metadata including when it was
+committed and who made it.</p>
+<h4 id="working-tree">Working tree</h4>
+<p>Your <strong>working tree</strong> are all the files in your repository other
+then the <code>.git</code> folder. We say that these files are
+<strong>checked out</strong>.</p>
+<h4 id="index">Index</h4>
+<p>A snapshot of your working tree that has not been commited. We can
+tell Git which modifications to include in the <strong>index</strong>.</p>
+</div>
+      </div></section>
+
+      <!-- # Create a commit command definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-add-https-git-scm-com-docs-git-add-"><a href="https://git-scm.com/docs/git-add">git-add</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git add &lt;path-list&gt;</span>
+</code></pre>
+<p>Add file content modifications to the index</p>
+<p class="parameter"><code>path</code> <em>A list space separated paths to add to the index. These can
+be file paths or directory paths.</em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-commit-https-git-scm-com-docs-git-commit-"><a href="https://git-scm.com/docs/git-commit">git-commit</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git commit [-m &lt;message&gt;]</span>
+</code></pre>
+<p>Record changes to the repository</p>
+<p class="parameter"><code>-m &lt;message&gt;</code> <em>A message to describe your commit.</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Create repository -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="3">3</h4>
+<h5 id="create-a-commit">Create a commit</h5>
+<h4 id="create-a-file">Create a file</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">echo</span> <span class="hljs-string">"print('hello, world')"</span> &gt; dragonite.py</span>
+</code></pre>
+<h4 id="add-to-the-index">Add to the index</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git add dragonite.py</span>
+</code></pre>
+<h4 id="commit-it">Commit it</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git commit -m <span class="hljs-string">"Add dragonite"</span></span>
+[master (root-commit) 798e5a2] Add dragonite
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dragonite.py
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Browse repository command definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-log-https-git-scm-com-docs-git-log-"><a href="https://git-scm.com/docs/git-log">git-log</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> [--decorate] [--graph] [--oneline]</span>
+</code></pre>
+<p>Show commit logs</p>
+<p class="parameter"><code>--decorate</code> <em>Display branch names.</em></p>
+<!-- -->
+<p class="parameter"><code>--graph</code> <em>Draw a text-based graphical representation of the commit
+history.</em></p>
+<!-- -->
+<p class="parameter"><code>--oneline</code> <em>Display a condensed log message.</em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-diff-https-git-scm-com-docs-git-diff-"><a href="https://git-scm.com/docs/git-diff">git-diff</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git diff [--cached]</span>
+</code></pre>
+<p>Show changes between working tree and <em>checked out</em> commit</p>
+<p class="parameter"><code>--cached</code> <em>Show changes between index and checked out commit.</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Browse repository -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="4">4</h4>
+<h5 id="browse-repository">Browse repository</h5>
+<h4 id="show-logs">Show logs</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph</span>
+* 10cc414 (HEAD -&gt; master) Add darth-vader
+* c496492 Add harry-potter
+* b727c67 Add pikachu
+* 798e5a2 Add dragonite
+</code></pre>
+<h4 id="show-diff">Show diff</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git diff</span>
+diff --git a/darth-vader.py b/darth-vader.py
+index b2204a3..0286ba5 100644
+--- a/darth-vader.py
++++ b/darth-vader.py
+@@ -1 +1 @@
+-print('hello, world')
++print('You were right')
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Push to GitHub definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="branch">Branch</h4>
+<p>A <strong>branch</strong> is a sequence of commits representing a single line
+of development. We refer to the tip of the branch as the <strong>branch
+head</strong> and it points at a specific commit.</p>
+<h4 id="remote">Remote</h4>
+<p>A <strong>remote</strong> or remote repository is a <em>copy</em> of your repository
+that you are watching or <strong>tracking</strong>. Your repository may contain
+commits that it doesn't have and it may contain commits your
+repository doesn't have.</p>
+</div>
+      </div></section>
+
+      <!-- # Push to GitHub movie -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="new-github-repository">New GitHub Repository</h4>
+</div>
+        <video src="https://gravity.astro.cf.ac.uk/~c1548640/create-github-repo.mp4" autoplay="" controls=""></video>
+      </div></div></section>
+
+      <!-- # Push to GitHub command definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-remote-https-git-scm-com-docs-git-remote-"><a href="https://git-scm.com/docs/git-remote">git-remote</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git remote add &lt;remote-name&gt; &lt;remote-url&gt;</span>
+</code></pre>
+<p>Manage set of tracked repositories</p>
+<p class="parameter"><code>remote-name</code> <em>The name you want to give this tracked remote
+repository.</em></p>
+<!-- -->
+<p class="parameter"><code>remote-url</code> <em>URL of the remote repository.</em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-push-https-git-scm-com-docs-git-push-"><a href="https://git-scm.com/docs/git-push">git-push</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git push [-u] [&lt;remote-name&gt;] [&lt;remote-branch&gt;]</span>
+</code></pre>
+<p>Update remote repositories along with associated commits</p>
+<p class="parameter"><code>remote-name</code> <em>The name of the remote repository you want to
+update.</em></p>
+<!-- -->
+<p class="parameter"><code>remote-branch</code> <em>Branch you want to send updates to from the current
+branch.</em></p>
+<!-- -->
+<p><code>-u</code> <em>If both <code>remote-name</code> and <code>remote-branch</code> are given, Git will
+rememeber so that you can omit them in future pushes.</em></p>
+</div>
+      </div></div></section>
+
+      <!-- # Push to GitHub -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="5">5</h4>
+<h5 id="push-to-github">Push to GitHub</h5>
+<h4 id="add-a-remote">Add a remote</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git remote add origin &lt;remote-url&gt;</span>
+</code></pre>
+<h4 id="push-a-branch">Push a branch</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git push origin master</span>
+</code></pre>
+</div>
+      </div></section>
+
+
+
+    </section>
+
+    <!-- # Pattern II : Making changes to projects -->
+    <section class="stack present" style="display: block;">
+      <section class="heading present" data-state="no-controls" style="display: block;">
+        <div data-markdown="" data-markdown-parsed="true"><h1 id="pattern-ii">Pattern II</h1>
+<h3 id="making-changes-to-projects">Making changes to projects</h3>
+</div>
+      </section>
+
+      <!-- # Goals -->
+      <section class="prose future" data-state="no-controls" aria-hidden="true" style="display: block;" hidden="">
+        <div data-markdown="" data-markdown-parsed="true"><h1 id="goals">Goals</h1>
+<ol>
+<li><p><strong>Create branches</strong><br>
+Create a new development line of commits</p>
+</li>
+<li><p><strong>Merge branches with fast-forward</strong><br>
+Combine different directly related development lines of commits</p>
+</li>
+<li><p><strong>Merge branches with a new commit</strong><br>
+Combine different development lines of commits</p>
+</li>
+<li><p><strong>Merge branches that have a conflict</strong><br>
+Combine different development lines of commits that change the
+same content</p>
+</li>
+<li><p><strong>Undo commits</strong><br>
+Delete previous commits from a repository</p>
+</li>
+</ol>
+</div>
+      </section>
+
+      <!-- # Create branches command definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: block;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-branch-https-git-scm-com-docs-git-branch-"><a href="https://git-scm.com/docs/git-branch">git-branch</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch [-d] [--list] [&lt;branch-name&gt;]</span>
+</code></pre>
+<p>List, create, or delete branches</p>
+<p class="parameter"><code>-d</code> <em>Delete a branch.</em></p>
+<!-- -->
+<p class="parameter"><code>--list</code> <em>List branches.</em></p>
+<!-- -->
+<p class="parameter"><code>branch-name</code> <em>Name of the branch to perform the operation on.</em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-checkout-https-git-scm-com-docs-git-checkout-"><a href="https://git-scm.com/docs/git-checkout">git-checkout</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git checkout [&lt;branch&gt;|&lt;commit&gt;]</span>
+</code></pre>
+<p>Switch branches or restore working tree files</p>
+<p class="parameter"><code>branch</code> <em>Name of branch or commit to switch to.</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Create branches -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="1">1</h4>
+<h5 id="create-branches">Create branches</h5>
+<h4 id="create-a-branch">Create a branch</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch mononoke</span>
+</code></pre>
+<h4 id="list-branches">List branches</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch --list</span>
+* master
+  mononoke
+</code></pre>
+<h4 id="checkout-a-branch">Checkout a branch</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git checkout mononoke</span>
+Switched to branch 'mononoke'
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Browse repository -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="show-status">Show status</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status</span>
+On branch mononoke
+nothing to commit, working tree clean
+</code></pre>
+<h4 id="show-log">Show log</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph</span>
+* d408e35 (HEAD -&gt; mononoke) That's enough
+* d8181fb To see with eyes unclouded by hate
+* a83cd98 (master) Update darth-vader
+* 10cc414 Add darth-vader
+* c496492 Add harry-potter
+* b727c67 Add pikachu
+* 798e5a2 Add dragonite
+</code></pre>
+<h4 id="checkout-master">Checkout master</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git checkout master</span>
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Browse repository -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="get-pikachu">Get pikachu</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">clone</span> https://github.com/Galadirith/pikachu.git</span>
+<span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> pikachu</span>
+</code></pre>
+<h4 id="show-log">Show log</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph --all</span>
+* df877b6 (origin/mononoke) Update darth-vader
+* d408e35 That's enough
+* d8181fb To see with eyes unclouded by hate
+| * 9834c57 (origin/howl) Update darth-vader
+| * c7e22ab And you are... who?
+| * f985bc0 What a pretty color
+|/
+* a83cd98 (HEAD -&gt; master, origin/master) Update darth-vader
+* 10cc414 Add darth-vader
+* c496492 Add harry-potter
+* b727c67 Add pikachu
+* 798e5a2 Add dragonite
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Merge branches with fast-forward definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-merge-https-git-scm-com-docs-git-merge-"><a href="https://git-scm.com/docs/git-merge">git-merge</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git merge [--no-commit] [--no-ff] [&lt;branch-name&gt;]</span>
+</code></pre>
+<p>Join two or more development histories together</p>
+<p class="parameter"><code>--no-commit</code> <em>Do not create a new commit for a sucessfull merge</em></p>
+<!-- -->
+<p class="parameter"><code>--no-ff</code> <em>Do not fast-forward merge even if a fast-forward merge
+can be performed</em></p>
+<!-- -->
+<p class="parameter"><code>--abort</code> <em>Stop a merge of branches are return to the last commit
+you had checked out.</em></p>
+<!-- -->
+<p class="parameter"><code>branch-name</code> <em>Name of the branch to merge into the checked out
+branch</em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="fast-forward-merge">fast-forward merge</h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><p>A <strong>fast-forward</strong> merge can be performed when the branch head of
+the current branch is a direct ancestor of the branch head of the
+merging branch. In this case the branch head is simply moved
+forward.</p>
+</div>
+      </div></div></section>
+
+      <!-- # Merge branches with fast-forward -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="2">2</h4>
+<h5 id="merge-branches-with-fast-forward">Merge branches with fast-forward</h5>
+<h4 id="merge-with-howl">Merge with howl</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git merge origin/howl</span>
+Updating a83cd98..9834c57
+Fast-forward ...
+</code></pre>
+<h4 id="show-log">Show log</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph --all</span>
+* df877b6 (origin/mononoke) Update darth-vader
+* d408e35 That's enough
+* d8181fb To see with eyes unclouded by hate
+| * 9834c57 (HEAD -&gt; master, origin/howl) Update darth-vader
+| * c7e22ab And you are... who?
+| * f985bc0 What a pretty color
+|/
+* a83cd98 (origin/master) Update darth-vader
+* 10cc414 Add darth-vader
+* c496492 Add harry-potter
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Merge branches with new commit and conflict -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h5 id="3-4">3 + 4</h5>
+<h6 id="merge-branches-with-new-commit-and-conflict">Merge branches with new commit and conflict</h6>
+<h4 id="merge-with-mononoke">Merge with mononoke</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git merge origin/mononoke</span>
+Auto-merging darth-vader.py
+CONFLICT (content): Merge conflict in darth-vader.py
+Automatic merge failed; fix conflicts and then commit
+</code></pre>
+<h4 id="show-status">Show status</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status</span>
+On branch master
+You have unmerged paths.
+  (use "git merge --abort" to abort the merge)
+Changes to be committed:
+      new file:   prince-ashitaka.py
+      new file:   san.py
+Unmerged paths:
+  (use "git add &lt;file&gt;..." to mark resolution)
+      both modified:   darth-vader.py
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Merge branches with new commit and conflict (cont.) -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h5 id="3-4">3 + 4</h5>
+<h6 id="merge-branches-with-new-commit-and-conflict-cont-">Merge branches with new commit and conflict (cont.)</h6>
+<h4 id="inspect-conflict">Inspect conflict</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># darth-vader.py</span>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+print(<span class="hljs-string">'Howl changed me'</span>)
+=======
+print(<span class="hljs-string">'Mononoke changed me'</span>)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; mononoke
+</code></pre>
+<h4 id="edit-conflict">Edit conflict</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># darth-vader.py</span>
+print(<span class="hljs-string">'Mononoke changed me'</span>)
+</code></pre>
+<h4 id="add-darth-varder-py-and-commit">Add darth-varder.py and commit</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git add darth-vader.py</span>
+<span class="hljs-meta">$</span><span class="bash"> git commit -m <span class="hljs-string">"Merge branch 'origin/mononoke'"</span></span>
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Browse repository -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="show-status">Show status</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status</span>
+On branch master
+nothing to commit, working tree clean
+</code></pre>
+<h4 id="show-log">Show log</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph --all</span>
+*   2580d92 (HEAD -&gt; master) Merge branch 'origin/mononoke'
+|\
+| * df877b6 (origin/mononoke) Update darth-vader
+| * d408e35 That's enough
+| * d8181fb To see with eyes unclouded by hate
+* | 9834c57 (origin/howl) Update darth-vader
+* | c7e22ab And you are... who?
+* | f985bc0 What a pretty color
+|/
+* a83cd98 (origin/master) Update darth-vader
+* 10cc414 Add darth-vader
+* c496492 Add harry-potter
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Undo commits command definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-reset-https-git-scm-com-docs-git-reset-"><a href="https://git-scm.com/docs/git-reset">git-reset</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git reset [--soft | --hard ] [&lt;commit&gt;]</span>
+</code></pre>
+<p>Reset current branch head to the specified commit</p>
+<p class="parameter"><code>--soft</code> <em>Does not change the working tree and any indexed files (
+<code>git add &lt;path&gt;</code>) will remain or be added to the index.</em></p>
+<!-- -->
+<p class="parameter"><code>--hard</code> <em>Reset the working tree the a previous state, discarding
+any changes in the working tree and staged changes in the index.</em></p>
+<!-- -->
+<p class="parameter"><code>commit</code> <em>Commit to reset the current branch head to.</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- #  -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="create-a-new-commit">Create a new commit</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">echo</span> <span class="hljs-string">"To be reset"</span> &gt; reset.txt</span>
+<span class="hljs-meta">$</span><span class="bash"> git add reset.txt</span>
+<span class="hljs-meta">$</span><span class="bash"> git status .</span>
+  On branch master
+  Changes to be committed:
+    (use "git reset HEAD &lt;file&gt;..." to unstage)
+      new file:   reset.txt
+<span class="hljs-meta">$</span><span class="bash"> git commit -m <span class="hljs-string">"The message will be reset"</span></span>
+</code></pre>
+<h4 id="show-the-log">Show the log</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph --all</span>
+* 77403eb (HEAD -&gt; master) The message will be reset
+*   8fc5225 Merge branch 'origin/mononoke'
+|\
+| * df877b6 (origin/mononoke) Update darth-vader
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Undo commits -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h5 id="5">5</h5>
+<h6 id="undo-commits">Undo commits</h6>
+<h4 id="soft-reset">Soft reset</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git reset --soft 8fc5225</span>
+</code></pre>
+<h4 id="show-status">Show status</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status .</span>
+  On branch master
+  Changes to be committed:
+    (use "git reset HEAD &lt;file&gt;..." to unstage)
+      new file:   reset.txt
+</code></pre>
+<h4 id="add-another-commit-to-reset">Add another commit to reset</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git commit -m <span class="hljs-string">"This message will also be reset"</span></span>
+<span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph --all</span>
+  * 5df8e19 (HEAD -&gt; master) This message will also be reset
+  * 8fc5225 Merge branch 'origin/mononoke'
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Undo commits (cont.)-->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;" hidden=""><div>
+        <div data-markdown="" data-markdown-parsed="true"><h5 id="5">5</h5>
+<h5 id="undo-commits-cont-">Undo commits (cont.)</h5>
+<h4 id="hard-reset">Hard reset</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git reset --hard 8fc5225</span>
+</code></pre>
+<h4 id="show-status">Show status</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git status .</span>
+  On branch master
+  nothing to commit, working tree clean
+</code></pre>
+<p><span></span></p>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">log</span> --decorate --oneline --graph --all</span>
+*   8fc5225 (HEAD -&gt; master) Merge branch 'origin/mononoke'
+|\
+| * df877b6 (origin/mononoke) Update darth-vader
+| * d408e35 That's enough
+</code></pre>
+</div>
+      </div></section>
+
+    </section>
+
+    <!-- # Pattern III : Collaborate with GitHub -->
+    <section hidden="" aria-hidden="true" class="stack future" style="display: block;">
+      <section class="heading" data-state="no-controls" style="display: block;">
+        <div data-markdown="" data-markdown-parsed="true"><h1 id="pattern-iii">Pattern III</h1>
+<h3 id="project-collaboration-with-github">Project collaboration with GitHub</h3>
+</div>
+      </section>
+
+      <!-- # Goals -->
+      <section class="prose future" data-state="no-controls" aria-hidden="true" style="display: block;">
+        <div data-markdown="" data-markdown-parsed="true"><h3 id="goals">Goals</h3>
+<ol>
+<li><p><strong>Create a fork</strong><br>
+Create a copy of a GitHub repository</p>
+</li>
+<li><p><strong>Clone the fork</strong><br></p>
+</li>
+<li><p><strong>Create and edit a branch</strong><br></p>
+</li>
+<li><p><strong>Push to the fork</strong><br></p>
+</li>
+<li><p><strong>Create a pull request</strong><br>
+Initiate a merge without commit between two forks</p>
+</li>
+<li><p><strong>Fetch changes from upstream</strong> <br>
+Update local repository with commits from the original</p>
+</li>
+<li><p><strong>Push upstream changes to fork</strong></p>
+</li>
+</ol>
+</div>
+      </section>
+
+      <!-- # Create a fork and clone it definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;"><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="fork">Fork</h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><p class="quote"><em>A fork is a personal copy of another user's repository that lives
+on your account. Forks allow you to freely make changes to a
+project without affecting the original. Forks remain attached to
+the original, allowing you to submit a pull request to the
+original's author to update with your changes. You can also keep
+your fork up to date by pulling in updates from the original.</em>
+<em><a href="https://help.github.com/articles/github-glossary/">Fork, GitHub glossary</a></em></p>
+<!-- -->
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-clone-https-git-scm-com-docs-git-clone-"><a href="https://git-scm.com/docs/git-clone">git-clone</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">clone</span> &lt;url&gt; [&lt;directory&gt;]</span>
+</code></pre>
+<p>Clone a repository into a new directory</p>
+<p class="parameter"><code>url</code> <em>URL to a remote repository.</em></p>
+<!-- -->
+<p class="parameter"><code>directory</code> <em>Directory in which to clone the repository. If this is
+omitted then a new folder will be created with the same name as the
+repository and it will be cloned into this folder.</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Create a fork and clone-->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h5 id="1-2">1+2</h5>
+<h5 id="create-a-fork-and-clone-it">Create a fork and clone it</h5>
+<h4 id="find-this-repo">Find this repo</h4>
+<p>Go to <a href="https://github.com/Galadirith/dragonite">github.com/Galadirith/dragonite</a></p>
+<h4 id="create-a-fork">Create a fork</h4>
+<p><img src="./VCS, Git and GitHub_files/fork.png" alt=""></p>
+<h4 id="copy-clone-url">Copy clone url</h4>
+<p><img src="./VCS, Git and GitHub_files/clone.png" alt=""></p>
+<h4 id="clone-repository">Clone repository</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">clone</span> https://github.com/&lt;username&gt;/dragonite</span>
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Create and edit a feature branch -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="3">3</h4>
+<h4 id="create-and-edit-a-branch">Create and edit a branch</h4>
+<h4 id="create-a-branch">Create a branch</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch update-readme</span>
+<span class="hljs-meta">$</span><span class="bash"> git checkout update-readme</span>
+</code></pre>
+<h4 id="update-readme-md">Update README.md</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># README.md</span>
+...
+- Edward Fauchon-Jones
+- Steven Fairhurst
+- Paul Hopkins
+- Duncan MacLeod
+- &lt;add-your-name-here&gt;
+</code></pre>
+<h4 id="commit-changes">Commit changes</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git add README.md</span>
+<span class="hljs-meta">$</span><span class="bash"> git commit -m <span class="hljs-string">"Add &lt;your-name&gt; to README"</span></span>
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Push to the fork definitions -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="remote-tracking-branches">Remote-tracking branches</h4>
+<p>A remote branch is a branch that exist on a remote repository. A
+<strong>remote-tracking branch</strong> is a local branch that follows what the
+remote branch is doing. An example of a remote-tracking branch is
+<code>origin/master</code>.</p>
+<h4 id="upstream-branches">Upstream branches</h4>
+<p>An <strong>upstream branch</strong> of a local branch is the default branch that
+will be merged into the local branch. The local branch is often
+called a <strong>tracking branch</strong>. When you clone a repository an
+<code>origin</code> remote is automatically added and the <code>master</code> branch is
+setup to track the <code>origin/master</code> remote-tracking branch.</p>
+</div>
+      </div></section>
+
+      <!-- # Push to the fork -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="show-all-branches">Show all branches</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch --list -a</span>
+  master
+* update-readme
+  remotes/origin/master
+</code></pre>
+<h4 id="show-upstream-branches">Show upstream branches</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch --list -a -vv</span>
+  master        52ee3e5 [origin/master] Add README
+* update-readme         52ee3e5 Add README
+  remotes/origin/master 52ee3e5 Add README
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Push to the fork -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="4">4</h4>
+<h4 id="push-to-the-fork">Push to the fork</h4>
+<h4 id="push-to-fork">Push to fork</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git push -u origin update-readme</span>
+</code></pre>
+<h4 id="future-pushes-from-update-readme">Future pushes from update-readme</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git push</span>
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Push to the fork -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="show-upstream-branches">Show upstream branches</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch --list -a -vv</span>
+  master        52ee3e5 [origin/master] Add README
+* update-readme 52ee3e5 [origin/update-readme] Add README
+  remotes/origin/master        52ee3e5 Add README
+  remotes/origin/update-readme 52ee3e5 Add README
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Create pull request -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="5">5</h4>
+<h4 id="create-pull-request">Create pull request</h4>
+</div>
+        <div>
+          <div></div>
+          <video src="https://gravity.astro.cf.ac.uk/~c1548640/pull-request.mp4" autoplay="" controls=""></video>
+        </div>
+      </div></section>
+
+      <!-- # Fetch changes from upstream definitions -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;"><div><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="-git-fetch-https-git-scm-com-docs-git-fetch-"><a href="https://git-scm.com/docs/git-fetch">git-fetch</a></h4>
+</div>
+        <div data-markdown="" data-markdown-parsed="true"><pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git fetch &lt;remote-name&gt;</span>
+</code></pre>
+<p>Download changes made to a remote repository</p>
+<p class="parameter"><code>remote-name</code> <em>The name of the remote repository you want to
+download changes from.</em></p>
+<!-- -->
+</div>
+      </div></div></section>
+
+      <!-- # Pull changes from upstream -->
+      <section class="two-column-1-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="5">5</h4>
+<h4 id="fetch-changes-from-upstream">Fetch changes from upstream</h4>
+<h4 id="add-remote">Add remote</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git remote add upstream \</span>
+  https://github.com/Galadirith/stfc-cdt-national-event-git.git
+</code></pre>
+<h4 id="fetch-changes">Fetch changes</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git fetch upstream</span>
+</code></pre>
+<h4 id="list-all-branches">List all branches</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git branch --list -a</span>
+  master
+* update-readme
+  remotes/origin/master
+  remotes/origin/update-readme
+  remotes/upstream/master
+  remotes/upstream/update-readme
+</code></pre>
+</div>
+      </div></section>
+
+      <!-- # Pull changes from upstream -->
+      <section class="two-column-2-3 future" aria-hidden="true" style="display: none;"><div>
+        <div data-markdown="" data-markdown-parsed="true"><h4 id="5">5</h4>
+<h4 id="fetch-changes-from-upstream-cont-">Fetch changes from upstream (cont.)</h4>
+<h4 id="checkout-master">Checkout master</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git checkout master</span>
+</code></pre>
+<h4 id="merge-upstream-master">Merge upstream/master</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git merge upstream/master</span>
+</code></pre>
+<h4 id="6">6</h4>
+<h4 id="push-upstream-changes-to-fork">Push upstream changes to fork</h4>
+<h4 id="push-to-fork">Push to fork</h4>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git push</span>
+</code></pre>
+</div>
+      </div></section>
+
+    </section>
+
+    <!-- # Profile -->
+    <section class="heading future" data-state="no-controls" hidden="" aria-hidden="true" style="display: block;">
+      <div class="profile">
+        <div>
+          <div data-markdown="" data-markdown-parsed="true"><p><img src="./VCS, Git and GitHub_files/unicorn.png" style="box-shadow: none; background: none;"></p>
+</div>
+        </div>
+        <div>
+          <div data-markdown="" data-markdown-parsed="true"><p><br><br><br></p>
+<h3 id="and-that-s-vcs-br-git-and-github">And that's VCS,<br> Git and GitHub</h3>
+<p><br><br><br></p>
+</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+<div class="backgrounds"><div class="slide-background heading past" data-loaded="true" style="display: none;"></div><div class="slide-background heading past" data-loaded="true" style="display: none;"></div><div class="slide-background heading past" data-loaded="true" style="display: none;"></div><div class="slide-background stack past" style="display: block;" data-loaded="true"><div class="slide-background heading present" style="display: block;" data-loaded="true"></div><div class="slide-background two-column-2-3 future" style="display: none;" data-loaded="true"></div><div class="slide-background two-column-1-3 future" style="display: none;" data-loaded="true"></div><div class="slide-background three-column-2-3-3 future" style="display: none;"></div><div class="slide-background three-column-2-3-3 future" style="display: none;"></div></div><div class="slide-background stack past" style="display: block;" data-loaded="true"><div class="slide-background heading present" style="display: block;" data-loaded="true"></div><div class="slide-background prose future" style="display: block;" data-loaded="true"></div><div class="slide-background two-column-1-3 future" style="display: none;" data-loaded="true"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div></div><div class="slide-background stack present" style="display: block;" data-loaded="true"><div class="slide-background heading present" style="display: block;" data-loaded="true"></div><div class="slide-background prose future" style="display: block;" data-loaded="true"></div><div class="slide-background two-column-1-3 future" style="display: block;" data-loaded="true"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div></div><div class="slide-background stack future" style="display: block;" data-loaded="true"><div class="slide-background heading present" style="display: block;" data-loaded="true"></div><div class="slide-background prose future" style="display: block;" data-loaded="true"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-1-3 future" style="display: none;"></div><div class="slide-background two-column-2-3 future" style="display: none;"></div></div><div class="slide-background heading future" style="display: block;" data-loaded="true"></div></div><div class="progress" style="display: block;"><span style="width: 656.308px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide" disabled="disabled"></button><button class="navigate-down enabled" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+        Pattern II
+Making changes to projects
+
+      </div></div>
+
+<!-- # Scripts -->
+<script src="./VCS, Git and GitHub_files/head.min.js"></script>
+<script src="./VCS, Git and GitHub_files/reveal.js"></script>
+<script src="./VCS, Git and GitHub_files/highlight.min.js"></script>
+<script src="./VCS, Git and GitHub_files/shell.min.js"></script>
+
+<script type="text/javascript" src="./VCS, Git and GitHub_files/index-bccc24e7525a7111dabd.js"></script>
+
+</body></html>
